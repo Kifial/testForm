@@ -1,0 +1,23 @@
+.success {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  &__text {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__check {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/check.png") no-repeat 0 0;
+    background-size: 100%;
+    margin-right: 6px;
+  }
+}

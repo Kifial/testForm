@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box; }
+
+body,
+html {
+  height: 100%;
+  font: normal 100% sans-serif; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.main-form {
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .main-form__login-wrap {
+    margin-bottom: 30px; }
+  .main-form__login {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    color: #333;
+    font-weight: 400;
+    position: relative; }
+    .main-form__login::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -64px;
+      top: -20px;
+      width: 60px;
+      height: 60px;
+      background: url("images/fire.svg") no-repeat 0 0;
+      background-size: 100%; }
+  .main-form__input {
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    text-align: left; }
+  .main-form__button {
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    color: #388edd;
+    font-size: 18px;
+    text-align: center;
+    background-color: transparent;
+    position: relative; }
+
+.success {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .success__text {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle; }
+  .success__check {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/check.png") no-repeat 0 0;
+    background-size: 100%;
+    margin-right: 6px; }
