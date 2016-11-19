@@ -6,6 +6,7 @@ var babel = require('babel-core');
 var glob = require('gulp-sass-glob');
 var gutil = require('gulp-util');
 var webpack = require('webpack');
+var concat = require('gulp-concat');
 
 import { webpackConfig } from './webpack.config';
 
@@ -28,7 +29,8 @@ gulp.task('server-scripts', function() {
 });
 
 gulp.task('style', function() {
-  return gulp.src('app/Assets/main.scss')
+  return gulp.src('app/**/*.scss')
+    .pipe(concat('main.scss'))
     .pipe(plumber())
     .pipe(glob())
     .pipe(sass())

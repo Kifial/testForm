@@ -15,3 +15,17 @@ export var webpackConfig = {
     }]
   }
 };
+
+export var webpackStyles = {
+  entry: `./app/`,
+  output: {
+    path: `app/`,
+    filename: 'main.scss'
+  },
+  module: {
+    loaders: [{
+      test: /\.scss$/,
+      exclude: /node_modules/
+    }]
+  }
+};
